@@ -4,16 +4,16 @@ import {FORM_PROVIDERS} from '@angular/common';
 
 import {Home} from './home';
 import {About} from './about';
-import {NavBar} from './navbar.component';
+import {NavBarComponent} from './navbar.component';
 
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-  selector: 'app',
+  selector: 'sg-app',
   providers: [...FORM_PROVIDERS],
-  directives: [...ROUTER_DIRECTIVES, NavBar],
+  directives: [...ROUTER_DIRECTIVES, NavBarComponent],
   pipes: [],
   styles: [`
     :host {
@@ -45,7 +45,7 @@ import {NavBar} from './navbar.component';
   new Route({path: '', component: Home}),
   new Route({path: 'about', component: About})
 ])
-export class App {
+export class AppComponent {
   name: string = 'Brunch for Angular 2';
   url: string = 'http://colin.is/blog';
   constructor() {

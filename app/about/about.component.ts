@@ -1,7 +1,7 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 
 @Component({
-  selector: 'about',
+  selector: 'sg-about',
   template: require('./about.component.html')
 })
 

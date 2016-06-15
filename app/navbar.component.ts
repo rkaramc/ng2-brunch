@@ -3,7 +3,7 @@ import {Location} from '@angular/common';
 import {ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
-  selector: 'navbar',
+  selector: 'sg-navbar',
   directives: [ROUTER_DIRECTIVES],
   styles: [`
     nav ul {
@@ -42,9 +42,9 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
     </nav>
   `
 })
-export class NavBar {
+export class NavBarComponent {
   constructor(public loc: Location) {}
-  
+
   isActive(path: string) {
     return (this.loc.path() || '/') === path;
   }

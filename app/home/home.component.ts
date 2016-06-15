@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {FORM_DIRECTIVES} from '@angular/common';
 
 @Component({
-  selector: 'home',
+  selector: 'sg-home',
   directives: [
     ...FORM_DIRECTIVES
   ],
