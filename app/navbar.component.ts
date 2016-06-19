@@ -24,7 +24,7 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
       display: inline-block;
     }
     nav .active {
-      
+
       background-color: #069;
       color: #fff;
     }
