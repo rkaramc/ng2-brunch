@@ -1,9 +1,7 @@
 import {Component} from '@angular/core';
-import {Routes, Route, Router, ROUTER_DIRECTIVES} from '@angular/router';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 import {FORM_PROVIDERS} from '@angular/common';
 
-import {HomeComponent} from './home';
-import {AboutComponent} from './about';
 import {NavBarComponent} from './navbar.component';
 
 /*
@@ -41,10 +39,6 @@ import {NavBarComponent} from './navbar.component';
     </footer>
   `
 })
-@Routes([
-  new Route({path: '', component: HomeComponent}),
-  new Route({path: 'about', component: AboutComponent})
-])
 export class AppComponent {
   name: string = 'Brunch for Angular 2';
   url: string = 'http://colin.is/blog';

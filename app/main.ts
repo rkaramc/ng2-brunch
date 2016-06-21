@@ -1,8 +1,6 @@
 import './vendor';
-import {provide} from '@angular/core';
+
 import {bootstrap} from '@angular/platform-browser-dynamic';
-import {LocationStrategy, PathLocationStrategy} from '@angular/common';
-import {ROUTER_PROVIDERS} from '@angular/router';
 import {HTTP_PROVIDERS} from '@angular/http';
 
 /*
@@ -11,6 +9,7 @@ import {HTTP_PROVIDERS} from '@angular/http';
  */
 import {AppComponent} from './app.component';
 
+import { APP_ROUTER_PROVIDERS } from './app.route';
 /*
  * Bootstrap our Angular app with a top level component `App` and inject
  * our Services and Providers into Angular's dependency injection
@@ -18,8 +17,7 @@ import {AppComponent} from './app.component';
 document.addEventListener('DOMContentLoaded', function main() {
   bootstrap(AppComponent, [
     ...HTTP_PROVIDERS,
-    ...ROUTER_PROVIDERS,
-    provide(LocationStrategy, { useClass: PathLocationStrategy })
+    ...APP_ROUTER_PROVIDERS,
   ])
   .catch(err => console.error(err));
 });
