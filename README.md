@@ -2,9 +2,9 @@
 
 [![Join the chat at https://gitter.im/colinbate/ng2-brunch](https://badges.gitter.im/colinbate/ng2-brunch.svg)](https://gitter.im/colinbate/ng2-brunch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-This is an Angular 2 (RC 1) application, built with [Brunch](http://brunch.io).
+This is an Angular 2 (RC 2) application, built with [Brunch](http://brunch.io).
 
-> Note that this version of Angular 2 has a new router and npm package structure. The router has some known issues, particularly around active link flagging.
+> See [Angular 2 (RC2) changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md#200-rc2-2016-06-15).
 
 ## Getting started
 * Install (if you don't have them):
