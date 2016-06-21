@@ -6,6 +6,8 @@ This is an Angular 2 (RC 2) application, built with [Brunch](http://brunch.io).
 
 > See [Angular 2 (RC2) changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md#200-rc2-2016-06-15).
 
+> Uses @angular/router ^3.0.0-alpha.0 for routing.
+
 ## Getting started
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X (or download installer from site). Requires a fairly recent version of Node.
