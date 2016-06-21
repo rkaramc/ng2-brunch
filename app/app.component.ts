@@ -2,8 +2,8 @@ import {Component} from '@angular/core';
 import {Routes, Route, Router, ROUTER_DIRECTIVES} from '@angular/router';
 import {FORM_PROVIDERS} from '@angular/common';
 
-import {Home} from './home';
-import {About} from './about';
+import {HomeComponent} from './home';
+import {AboutComponent} from './about';
 import {NavBarComponent} from './navbar.component';
 
 /*
@@ -42,8 +42,8 @@ import {NavBarComponent} from './navbar.component';
   `
 })
 @Routes([
-  new Route({path: '', component: Home}),
-  new Route({path: 'about', component: About})
+  new Route({path: '', component: HomeComponent}),
+  new Route({path: 'about', component: AboutComponent})
 ])
 export class AppComponent {
   name: string = 'Brunch for Angular 2';
